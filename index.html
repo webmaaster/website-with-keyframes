@@ -11,9 +11,10 @@
 <body>
     <!--Page 1 Intro-->
     <section id="page-1" class="page">
-            <h1>Welcome To My Presentation!</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, iste omnis fugiat vitae est harum placeat! Fugit quae corrupti earum incidunt? Debitis non eos facere sapiente in porro! Molestiae fugiat quo unde omnis. Dolore iusto facilis magnam dicta? Voluptates quas velit quo. Facilis expedita unde aspernatur earum, ab voluptate voluptatum!</p>
-        
+            <h1>Welcome To Understanding <br>
+                The Core Web Technology <br> The 1st Step To Become <br> A Software Engineer!</h1>
+            <p>I am super excited to be your instructor to this very course. I hope you will learn a lot and enjoy the classes with me!</p>
+        <p>It will be a 3 month long course! And you don't need to know any programming language to join the course!</p>
         <div>
             <a href="#page-2" class="btn">
             Next Page <i class="fas
@@ -78,9 +79,25 @@
 </section>
 
 
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 
-
-
+<script>
+    //Smooth scrolling
+    $('.btn').on('click', function(){
+        if (this.hash !== '') {
+            
+            event.preventDefault();
+            const hash = this.hash;
+            $('html, body').animate({
+                scrolltop: $(hash).offset().top 
+            },
+            1400);
+        }
+    }); 
+</script>
     
 </body>
 </html>

@@ -3,7 +3,7 @@
     --page-2-color: tan;
     --page-3-color: teal;
     --page-4-color: slateblue;
-    --animate-speed: 1s;
+    --animate-speed: 2s;
 
 }
 
@@ -34,9 +34,16 @@ body {
 }
 
 .page h1 {
-    font-size: 1.3rem;
+    font-size: 4.3rem;
+    line-height: 1.2;
+    margin: 1rem;
 
 }
+
+.page p {
+    font-size: 1.3rem;
+}
+
 
 .btn {
     display: inline-block;
@@ -61,6 +68,45 @@ body {
     background: #f4f4f4;
     color: #333;
 }
+
+/*Page animation */
+#page-1 h1 {
+    transform: translateY(-1200px);
+    animation: heading var(--animate-speed) forwards
+    ease-in;
+}
+
+/*Keyframes */
+@keyframes heading {
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+#page-1 p {
+    transform: translateX(-1800px);
+    animation: text var(--animate-speed) forwards
+    ease-in;
+}
+
+/*Keyframes */
+@keyframes heading {
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes text {
+    to {
+        transform: translateX(0);
+    }
+} 
+
+
+
+
+
 
 
 
