@@ -7,8 +7,11 @@
     <script src="https://kit.fontawesome.com/d7503af033.js" crossorigin="anonymous"></script>
     <title>Presentational Website</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="menu.css">
+
 </head>
 <body>
+
     <!--Page 1 Intro-->
     <section id="page-1" class="page">
             <h1>Welcome To Understanding <br>
@@ -86,15 +89,17 @@
 
 <script>
     //Smooth scrolling
-    $('.btn').on('click', function(){
+    $('.btn').on('click', function(event){
         if (this.hash !== '') {
             
             event.preventDefault();
             const hash = this.hash;
-            $('html, body').animate({
-                scrolltop: $(hash).offset().top 
+            $('html, body').animate(
+                {
+                scrollTop: $(hash).offset().top 
             },
-            1400);
+            1400
+            );
         }
     }); 
 </script>
