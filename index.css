@@ -35,7 +35,45 @@ body {
 
 .page h1 {
     font-size: 1.3rem;
-    
+
 }
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #f4f4f4;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    transition: all 0.3s ease-in;
+}
+
+.btn:hover,
+.btn-dark {
+    background: #333;
+    color: #fff;
+}
+
+.btn-dark:hover{
+    background: #f4f4f4;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
